@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThriveInMind - Articles</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="display: inline;"><img src="logo.png" alt="ThriveInMind" style="width: 130px; vertical-align: middle;"></li>
+            <li style="display: inline;"><a href="#home" onclick="showContent('home')">Home</a></li>
+            <li style="display: inline;">
+                <a href="#contents" onclick="toggleDropdown('contents-dropdown')">Contents</a>
+               <ul id="contents-dropdown" style="display: none;">
+                    <li><a href="#introduction" onclick="showContent('introduction')">Introduction</a></li>
+                    <li><a href="#types" onclick="showContent('types')">Types of Mental Illness</a></li>
+                    <li><a href="#cope" onclick="showContent('cope')">How To Cope Up/Hotlines</a></li>
+                    <li><a href="#misconceptions" onclick="showContent('misconceptions')">Misconceptions about Mental Health</a></li>
+                    <li><a href="#blogs" onclick="showBlogs('blogs')">Related Articles</a></li>
+                </ul>
+            </li>
+            <li style="display: inline;"><a href="#about" onclick="showContent('about')">About Us</a></li>
+        </ul>        
+    </nav>
+
+   <section id="blogs-content" style="display: none;">
+        <h2>Articles</h2>
+        <ul>
+            <li>
+                <a href="https://www.pinerest.org/newsroom/articles/mental-health-awareness-blog">The importance of Mental Health Awareness</a>
+                <p><img src="Art1.jpg" alt="image" width="300"></p>
+            </li>  
+            <li>
+                <a href="https://magazine.medlineplus.gov/article/taking-on-the-stigma-of-adhd/3">Taking on the Stigma of ADHD</a>
+                <p><img src="Art2.jpg" alt="image" width="300"></p>
+            </li>           
+            <li>
+                <a href="https://www.nature.com/articles/d41586-021-02690-5"> Young People's Mental Health is Finally Getting the Attention it Needs</a>
+                <p><img src="Art3.jpg" alt="image" width="300"></p>
+            </li>
+            <li>
+                <a href="https://magazine.medlineplus.gov/article/anxiety-what-you-need-to-know/">Anxiety: What You Need to Know</a>
+                <p><img src="Art4.jpg" alt="image" width="300"></p>
+            </li>
+            <li>
+                <a href="https://magazine.medlineplus.gov/article/starting-the-conversation-to-improve-mental-health/">Starting the Conversation to Improve Mental Health</a>
+                 <p><img src="Art5.jpg" alt="image" width="300"></p>
+            </li>                     
+            <li>
+                <a href="https://www.betterup.com/blog/mental-health-awareness?fbclid=IwAR2Edv01_V0ihyCKGFXen0GUGN8vfxLip1sSCk8VRJeRsrbNzylaqwQGn4I">Mental health awareness: The importance of conversation</a>
+                 <p><img src="Art6.jpg" alt="image" width="300"></p>
+            </li><br>
+                       
+           <details>
+                <summary>Read more</summary>
+                <li>
+                    <a href="https://www.apa.org/monitor/2023/01/trends-improving-youth-mental-health?fbclid=IwAR2Jde7yhSal-sQn125ywnc9hyVFjodSuQcWunglvN7fYUTCtu6qaYlvuUU">Kids’ mental health is in crisis. Here’s what psychologists are doing to help</a>                 
+                </li><br>
+                <li>
+                    <a href="https://www.theguardian.com/science/brain-flapping/2018/may/15/mental-health-awareness-is-great-but-action-is-essential">Mental health: awareness is great, but action is essential</a>                 
+                </li><br>
+                <li>
+                    <a href="https://www.news-medical.net/health/Mental-Health-in-Humanitarian-Settings.aspx">Mental Health in Humanitarian Settings</a>                 
+                </li><br>
+                <li>
+                    <a href="https://yourmentalhealthpal.com/winnie-the-pooh-mental-disorders/">Winnie The Pooh Characters And Their Mental Disorders</a>                 
+                </li><br>
+                <li>
+                    <a href="https://yourmentalhealthpal.com/complete-guide-on-what-to-do-when-you-are-lonely/">Solo Thriving: A Guide On What To Do When You Are Lonely</a>                 
+                </li><br>
+                <li>
+                    <a href="https://chipur.com/13-things-to-immediately-consider-when-you-are-spiraling-downward-and-scared/">13 things to consider when you’re spiraling downward</a>                 
+                </li><br>
+                <li>
+                    <a href="https://chipur.com/what-causes-panic-disorder-crucial-new-research/">What causes panic disorder? Crucial new research</a>                 
+                </li><br>
+                <li>
+                    <a href="https://chipur.com/our-stress-and-relaxation-responses-what-you-need-to-know/">Our stress and relaxation responses: What you need to know</a>                 
+                </li><br>
+                <li>
+                    <a href="https://chipur.com/neuroarts-how-creativity-nurtures-mental-well-being/">Neuroarts: How Creativity Nurtures Mental Well-being</a>                 
+                </li><br>
+            </details>           
+            
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email: thriveinmind@gmail.com</p>
+            <p>Phone: 0991-604-0407</p>
+        </div>
+        
+        <div>
+            <h3>Follow Us</h3>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>       
+
+        <div>
+            <p>&copy; 2024 Thrive In Mind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+        function showBlogs() {
+            var blogsContent = document.getElementById("blogs-content");
+            if (blogsContent.style.display === "none" || blogsContent.style.display === "") {
+                blogsContent.style.display = "block";
+            } else {
+                blogsContent.style.display = "none";
+            }
+        }
+
+        function showContent(id) {
+            // This function can be implemented as per your requirement
+        }
+    </script>
+
+</body>
+
+</html>
