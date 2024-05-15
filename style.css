@@ -1,9 +1,8 @@
-/* styles.css */
-
 body {
     font-family: "Lato", sans-serif;
     margin: 0;
- 
+    line-height: 1.6;
+    color: #333;
 }
 
 .logo-container {
@@ -20,7 +19,7 @@ body {
 nav {
     background-color: #3d3939;
     color: #fff;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,13 +33,14 @@ nav {
 nav a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #555;
+    color: hotpink;
 }
 
 .dropdown {
@@ -65,11 +65,12 @@ nav a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-content a:hover {
     background-color: #555;
+    color: hotpink;
 }
 
 section {
@@ -81,6 +82,209 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    
 }
 
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 50px; /* Reduced bottom margin */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+    color: hotpink;
+}
+
+#welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Reduced padding */
+    padding-top: 5px; /* Specifically reduce top padding */
+    font-family: 'Lato', sans-serif;
+}
+
+#welcome .content {
+    width: 50%;
+}
+
+#welcome img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #welcome {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    #welcome .content, #welcome img {
+        width: 100%;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav a {
+        padding: 10px 0;
+    }
+}
+
+/* Button Styling */
+.get-started-button {
+    display: inline-block;
+    background-color: #9c7790; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline from text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.get-started-button:hover {
+    background-color: #827b78; /* Slightly darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Content Styling */
+section {
+    padding: 20px;
+    margin-bottom: 30px; /* Add margin bottom for spacing between sections */
+    background-color: #f9f9f9; /* Add a light background color to content sections */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+h2 {
+    color: #333;
+    font-size: 50px;
+    margin-bottom: 20px; /* Add margin bottom to separate headings from content */
+}
+
+h3 {
+    color: #f1ebeb;
+    font-size: 20px;
+    margin-bottom: 15px; /* Add margin bottom to separate headings from content */
+}
+
+p {
+    margin-bottom: 15px; /* Add margin bottom for spacing between paragraphs */
+    line-height: 1.8; /* Improve line spacing for better readability */
+}
+
+ul, ol {
+    margin-bottom: 15px; /* Add margin bottom for spacing between lists and content */
+}
+
+ul li, ol li {
+    margin-bottom: 5px; /* Add margin bottom for spacing between list items */
+}
+
+a {
+    color: #9c7790; /* Change link color to match the theme */
+    transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+
+a:hover {
+    color: #383230; /* Change link color on hover for better visibility */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 15px; /* Decrease padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 18px; /* Decrease font size for smaller screens */
+    }
+}
+
+
+.article-box {   /*articles*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.article-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #e0d0d0;
+    transition: transform 0.2s;
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-card h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.article-card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.article-card:hover {
+    transform: translateY(-3px);
+}
