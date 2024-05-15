@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ThriveInMind - Mental Health Awareness</title>
+    <meta name="description" content="ThriveInMind is dedicated to raising mental health awareness and providing support through resources, guidance, and community engagement.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-  
+
 </head>
 <body>
-    <nav>
+     <nav>
         <div class="logo-container">
             <img class="logo" src="images/logo.png" alt="ThriveInMind">
             <h1>ThriveInMind</h1>
-        </div>
+        </div> 
         <div class="nav-links">
             <a href="index.html">Home</a>
             <div class="dropdown">
@@ -31,8 +32,36 @@
         </div>
     </nav>
 
-    <section>
-        <!-- Your content goes here -->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/mth.png" style="width:100% ">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/mttrs.png" style="width:100% ">
+        </div>
+
+
+
+    <section id="welcome">
+        <div class="content">
+       <h2>Welcome to ThriveInMind</h2> </a>
+            <p>"In the midst of chaos, there is also opportunity." - Sun Tzu</p>
+            <p>In today's fast-paced world, mental health stands as an essential pillar of our overall well-being. Acknowledging this fundamental truth, ThriveInMind emerges as a beacon of hope and support, dedicated to championing mental health awareness and fostering a compassionate community. Our mission is not merely to exist as a digital platform but to serve as a catalyst for positive change, empowering individuals to prioritize their mental well-being and find solace in shared experiences.</p>
+            
+            <p>At the heart of ThriveInMind lies a profound belief in the significance of mental health. We recognize that navigating the complexities of the mind can be daunting, yet our commitment remains unwavering: to provide a sanctuary where individuals can access a wealth of resources, guidance, and support. From informative articles shedding light on various aspects of mental health to poignant personal stories that resonate with the depths of human experience, our platform offers a diverse array of insights tailored to every individual's journey.</p>
+            
+            <p>Beyond serving as a repository of knowledge, ThriveInMind serves as a safe haven, where individuals find solace in community support. Breaking free from the shackles of stigma and silence, we cultivate an environment of openness and understanding. Here, vulnerability is not a weakness but a strength, fostering connections built on empathy and compassion. Through active engagement and dialogue, we strive to normalize discussions surrounding mental health, erasing the barriers that prevent individuals from seeking help and support.</p>
+            <a href="introduction.html" class="get-started-button">Get Started</a>
+            <!-- <p>Our vision extends beyond the confines of cyberspace; it encompasses a collective aspiration to create a world where mental health is prioritized and nurtured. By amplifying voices, sharing experiences, and advocating for change, we endeavor to spark a ripple effect of positivity and acceptance. Together, we challenge societal norms and perceptions, fostering a culture where seeking help is met with encouragement and understanding.</p>
+            <p>As individuals journey through the labyrinth of mental health, ThriveInMind stands as a steadfast companion, offering guidance, companionship, and hope. Through exploration, learning, and shared experiences, we reaffirm a fundamental truth: no one walks this path alone. ThriveInMind is more than just a website; it is a testament to the resilience of the human spirit and the power of community in nurturing mental well-being.</p>
+            <p>In conclusion, ThriveInMind serves as a beacon of hope and support in a world where mental health is often overlooked. With a steadfast commitment to fostering awareness, providing resources, and nurturing community support, we strive to create a world where mental well-being thrives, and every voice is heard and valued. Together, let us embark on this transformative journey, embracing resilience, empathy, and hope as we navigate the complexities of the human mind.</p> -->
+        </div>
+    
+        <div>
+            <img src="images/hands.jfif" alt="hand extending a help">
+        </div>
     </section>
 
     <footer>
@@ -53,5 +82,29 @@
             <p>&copy; 2024 Thrive In Mind. All rights reserved.</p>
         </div>
     </footer>
+
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+</script>
+
 </body>
 </html>
