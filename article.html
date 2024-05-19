@@ -5,54 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThriveInMind - Articles</title>
+    <meta name="description" content="Explore a collection of articles on mental health awareness, support, and related topics curated by ThriveInMind.">
+    <meta name="keywords" content="ThriveInMind, mental health articles, mental health awareness, ADHD stigma, youth mental health, anxiety, mental health resources, loneliness, panic disorder, stress, creativity and mental well-being">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <nav>
-        <ul style="list-style-type: none; padding: 0;">
-            <li style="display: inline;"><img src="logo.png" alt="ThriveInMind" style="width: 130px; vertical-align: middle;"></li>
-            <li style="display: inline;"><a href="#home" onclick="showContent('home')">Home</a></li>
-            <li style="display: inline;">
-                <a href="#contents" onclick="toggleDropdown('contents-dropdown')">Contents</a>
-               <ul id="contents-dropdown" style="display: none;">
-                    <li><a href="#introduction" onclick="showContent('introduction')">Introduction</a></li>
-                    <li><a href="#types" onclick="showContent('types')">Types of Mental Illness</a></li>
-                    <li><a href="#cope" onclick="showContent('cope')">How To Cope Up/Hotlines</a></li>
-                    <li><a href="#misconceptions" onclick="showContent('misconceptions')">Misconceptions about Mental Health</a></li>
-                    <li><a href="#blogs" onclick="showBlogs('blogs')">Related Articles</a></li>
-                </ul>
-            </li>
-            <li style="display: inline;"><a href="#about" onclick="showContent('about')">About Us</a></li>
-        </ul>        
-    </nav>
+        <div class="logo-container">
+            <img class="logo" src="logo.png" alt="ThriveInMind">
+            <h1>ThriveInMind</h1>
+        </div>
 
-   <section id="blogs-content" style="display: none;">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Contents <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="introduction.html">Introduction</a>
+                    <a href="mental_disorders.html">Types of Mental Disorders</a>
+                    <a href="cope.html">How To Cope Up/Hotlines</a>
+                    <a href="misconceptions.html">Misconceptions about Mental Health</a>
+                    <a href="articles.html">Related Articles</a>
+                </div>
+            </div>
+            <a href="about_us.html">About Us</a>
+        </div>
+    </nav>
+   <section id="blogs-content">
         <h2>Articles</h2>
         <ul>
             <li>
                 <a href="https://www.pinerest.org/newsroom/articles/mental-health-awareness-blog">The importance of Mental Health Awareness</a>
-                <p><img src="Art1.jpg" alt="image" width="300"></p>
+                <p><img src="images/Art1.jpg" alt="image" width="300"></p>
             </li>  
             <li>
                 <a href="https://magazine.medlineplus.gov/article/taking-on-the-stigma-of-adhd/3">Taking on the Stigma of ADHD</a>
-                <p><img src="Art2.jpg" alt="image" width="300"></p>
+                <p><img src="images/Art2.jpg" alt="image" width="300"></p>
             </li>           
             <li>
                 <a href="https://www.nature.com/articles/d41586-021-02690-5"> Young People's Mental Health is Finally Getting the Attention it Needs</a>
-                <p><img src="Art3.jpg" alt="image" width="300"></p>
+                <p><img src="images/Art3.jpg" alt="image" width="300"></p>
             </li>
             <li>
                 <a href="https://magazine.medlineplus.gov/article/anxiety-what-you-need-to-know/">Anxiety: What You Need to Know</a>
-                <p><img src="Art4.jpg" alt="image" width="300"></p>
+                <p><img src="images/Art4.jpg" alt="image" width="300"></p>
             </li>
             <li>
                 <a href="https://magazine.medlineplus.gov/article/starting-the-conversation-to-improve-mental-health/">Starting the Conversation to Improve Mental Health</a>
-                 <p><img src="Art5.jpg" alt="image" width="300"></p>
+                 <p><img src="images/Art5.jpg" alt="image" width="300"></p>
             </li>                     
             <li>
                 <a href="https://www.betterup.com/blog/mental-health-awareness?fbclid=IwAR2Edv01_V0ihyCKGFXen0GUGN8vfxLip1sSCk8VRJeRsrbNzylaqwQGn4I">Mental health awareness: The importance of conversation</a>
-                 <p><img src="Art6.jpg" alt="image" width="300"></p>
+                 <p><img src="images/Art6.jpg" alt="image" width="300"></p>
             </li><br>
                        
            <details>
@@ -88,7 +95,7 @@
             
         </ul>
     </section>
-
+<br>
     <footer>
         <div>
             <h3>Contact Us</h3>
@@ -108,30 +115,21 @@
         </div>
     </footer>
 
-    <script>
-        function toggleDropdown(id) {
-            var dropdown = document.getElementById(id);
-            if (dropdown.style.display === "none" || dropdown.style.display === "") {
-                dropdown.style.display = "block";
-            } else {
-                dropdown.style.display = "none";
-            }
+
+<script>
+        function toggleDropdown(dropdownID) {
+            var dropdown = document.getElementById(dropdownID);
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
         }
 
-        function showBlogs() {
-            var blogsContent = document.getElementById("blogs-content");
-            if (blogsContent.style.display === "none" || blogsContent.style.display === "") {
-                blogsContent.style.display = "block";
-            } else {
-                blogsContent.style.display = "none";
-            }
-        }
-
-        function showContent(id) {
-            // This function can be implemented as per your requirement
+        function showContent(topic) {
+         
+            var sections = ["home", "about", "introduction", "blogs", "types", "cope", "misconceptions"];
+            sections.forEach(function(section) {
+                document.getElementById(section).style.display = (section === topic) ? "block" : "none";
+            });
         }
     </script>
-
 </body>
 
 </html>
