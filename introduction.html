@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - ThriveInMind</title>
+    <meta name="description" content="Learn about mental health and thriving in every aspect of life. ThriveInMind promotes mental wellness, empowers individuals, and builds a supportive community.">
+    <meta name="keywords" content="ThriveInMind, mental health, mental wellness, thriving, community, empowerment, support">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+       <nav>
+        <div class="logo-container">
+            <img class="logo" src="logo.png" alt="ThriveInMind">
+            <h1>ThriveInMind</h1>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Contents <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="introduction.html">Introduction</a>
+                    <a href="mental_disorders.html">Types of Mental Disorders</a>
+                    <a href="cope.html">How To Cope Up/Hotlines</a>
+                    <a href="misconceptions.html">Misconceptions about Mental Health</a>
+                    <a href="articles.html">Related Articles</a>
+                </div>
+            </div>
+            <a href="about_us.html">About Us</a>
+        </div>
+    </nav>
+    
+    
+    <section id="home">
+        <header>
+            <h1>Introduction to ThriveInMind</h1>
+            <p>Welcome to our platform dedicated to mental health awareness and support.</p>
+        </header>
+    </section>
+
+    <section id="introduction">
+        <p>Mental health is more than just the absence of illness; it's about thriving in every aspect of life. At Thrive in Mind, we're dedicated to promoting mental wellness and empowering individuals to lead fulfilling lives.</p>
+        <p>Through our platform, we offer a diverse range of resources, from articles and guides to personal stories and expert advice, all aimed at helping you navigate your mental health journey with confidence and resilience. Our community is built on empathy, understanding, and support, ensuring that no one feels alone in their struggles.</p>
+        <p>Join us in our mission to break down barriers, challenge stigma, and promote mental well-being for all. Together, we can create a world where mental health is valued, prioritized, and celebrated.</p>
+        <p><em>Inspiring lives, empowering minds.</em></p>
+    </section>
+<br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: thriveinmind@gmail.com</p>
+                <p>Phone: 0991-604-0407</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Thrive In Mind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown(dropdownID) {
+            var dropdown = document.getElementById(dropdownID);
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+
+        function showContent(topic) {
+
+            var sections = ["home", "about", "introduction", "blogs", "types", "cope", "misconceptions"];
+            sections.forEach(function (section) {
+                document.getElementById(section).style.display = (section === topic) ? "block" : "none";
+            });
+        }
+    </script>
+</body>
+
+</html>
