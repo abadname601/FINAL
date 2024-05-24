@@ -4,6 +4,9 @@ body {
     line-height: 1.6;
     color: #333;
 }
+.brand-name{
+    font-family: 'Poppins', sans-serif;
+}
 
 .logo-container {
     display: flex;
@@ -84,16 +87,20 @@ footer {
     text-align: center;
 }
 
+/* Slideshow container */
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    margin-bottom: 50px; 
+     margin-bottom: 50px;  
+    
 }
 
+/* Hide the images by default */
 .mySlides {
     display: none;
 }
 
+/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -121,6 +128,37 @@ footer {
 a:hover {
     color: hotpink;
 }
+section#welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Optional: Adjust spacing between elements */
+    padding: 20px; /* Optional: Add padding around the section */
+}
+
+section#welcome .content,
+section#welcome .img {
+    flex: 1;
+    min-width: 300px; /* Adjust this as needed to ensure proper layout on smaller screens */
+    box-sizing: border-box;
+}
+
+
+
+section#welcome .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Optional: Add padding around the image */
+}
+
+section#welcome .img img {
+    max-width: 100%;
+    height: auto;
+   
+}
+
 
 #welcome {
     display: flex;
@@ -128,11 +166,11 @@ a:hover {
     align-items: center;
     padding: 20px; 
     padding-top: 5px; 
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #welcome .content {
-    width: 50%;
+    width: 80%;
 }
 
 #welcome img {
@@ -140,15 +178,16 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} 
 
+/* Responsive Design */
 @media (max-width: 768px) {
     #welcome {
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
     }
     
-    #welcome .content, #welcome img {
+  #welcome img {
         width: 100%;
     }
     
@@ -167,83 +206,90 @@ a:hover {
     }
 }
 
-.get-started-button {
+/* Button Styling */
+.get-started-button, .next-button {
     display: inline-block;
-    background-color: #9c7790; 
-    color: #fff; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    text-align: center; 
-    text-decoration: none; 
-    font-size: 16px; 
-    font-weight: bold; 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #9c7790; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline from text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .get-started-button:hover {
-    background-color: #827b78; 
-    transform: translateY(-2px); 
+    background-color: #827b78; /* Slightly darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
+/* Content Styling */
 section {
     padding: 20px;
-    margin-bottom: 30px; 
-    background-color: #f9f9f9; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px; /* Add margin bottom for spacing between sections */
+    background-color: #f9f9f9; /* Add a light background color to content sections */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
-h2 {
+h2, {
     color: #333;
-    font-size: 50px;
-    margin-bottom: 20px; 
+    font-size: 40px;
+    margin-bottom: 20px; /* Add margin bottom to separate headings from content */
+}
+h3.intro{
+    color: #333;
+    font-size: 30px;
 }
 
 h3 {
-    color: #f1ebeb;
+    color: #f4f4f4;
     font-size: 20px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px; /* Add margin bottom to separate headings from content */
 }
 
 p {
-    margin-bottom: 15px; 
-    line-height: 1.8; 
+    margin-bottom: 15px; /* Add margin bottom for spacing between paragraphs */
+    line-height: 1.8; /* Improve line spacing for better readability */
 }
 
 ul, ol {
-    margin-bottom: 15px; 
+    margin-bottom: 15px; /* Add margin bottom for spacing between lists and content */
 }
 
 ul li, ol li {
-    margin-bottom: 5px; 
+    margin-bottom: 5px; /* Add margin bottom for spacing between list items */
 }
 
 a {
-    color: #9c7790; 
-    transition: color 0.3s ease; 
+    color: #e549b4; /* Change link color to match the theme */
+    transition: color 0.3s ease; /* Smooth transition for link color change */
 }
 
 a:hover {
-    color: #383230; 
+    color: #383230; /* Change link color on hover for better visibility */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     section {
-        padding: 15px; 
+        padding: 15px; /* Decrease padding for smaller screens */
     }
 
     h2 {
-        font-size: 20px; 
+        font-size: 20px; /* Decrease font size for smaller screens */
     }
 
     h3 {
-        font-size: 18px; 
+        font-size: 18px; /* Decrease font size for smaller screens */
     }
 }
 
 
-.article-box {   
+.article-box {   /*articles*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
@@ -326,6 +372,8 @@ a:hover {
     }
 }
 
+/* su sa abot us n ywzsha*/
+
 #about-content {
     background-color: #fff;
     padding: 50px 20px;
@@ -375,10 +423,91 @@ a:hover {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .about-text,
     .about-image {
         max-width: 100%; 
         margin: 0;
     }
+}
+
+#misconceptions-content, #blogs-content,# {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    /* box-shadow: 0 0 10px rgb(145, 129, 144); */
+    max-width: 1000px;
+}
+
+.feedback-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;  /* Adjust as needed for spacing */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.feedback-form h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form textarea,
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e898c8;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input[type="text"] {
+    flex: 1;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+}
+
+.feedback-form input[type="submit"] {
+    width: 50%;
+    padding: 20px;
+    background-color: #d63384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #c12970;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #d63384;
+    outline: none;
 }
