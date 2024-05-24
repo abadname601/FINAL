@@ -36,7 +36,18 @@
         </div>
     </nav>
   
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/1.png" style="width:100% ">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/2.png" style="width:100% ">
+        </div>
+</div>
     <section id="cope-content">
+      
         <h2>How To Cope Up/Hotlines</h2>
         <p>While it's not always possible to prevent mental health issues entirely, there are several strategies that can promote mental well-being and reduce the risk of developing certain conditions. Here are some ways to prevent mental health issues:</p>
         <ol>
@@ -115,6 +126,30 @@
                 document.getElementById(section).style.display = (section === topic) ? "block" : "none";
             });
         }
+
+    
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+
     </script>
 </body>
 
