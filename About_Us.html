@@ -5,20 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThriveInMind - About Us</title>
-    <meta name="description" content="ThriveInMind is dedicated to promoting mental health awareness.">
-    <meta name="keywords" content="ThriveInMind, mental disorders, mental health, awareness">
+    <meta name="description" content="We're a group of passionate students dedicated to promoting mental health awareness and support.">
+    <meta name="keywords" content="ThriveInMind, mental health awareness, mental health support, student organization, mental wellness, mental health stigma, mental health resources">
+    <meta name="author" content="ThriveInMind Team">
+    <meta property="og:title" content="ThriveInMind - About Us">
+    <meta property="og:description" content="We're a group of passionate students dedicated to promoting mental health awareness and support.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://yourwebsite.com/about_us.html">
+    <meta property="og:type" content="website">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .team-container {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .team-member p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+        #about-content {
+            flex: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
+    <nav role="navigation">
         <div class="logo-container">
-            <img class="logo" src="images/logo.png" alt="ThriveInMind">
+            <img class="logo" src="images/logo.png" alt="ThriveInMind Logo">
             <h1>ThriveInMind</h1>
         </div>
-
         <div class="nav-links">
             <a href="index.html">Home</a>
             <div class="dropdown">
@@ -34,23 +78,38 @@
             <a href="about_us.html">About Us</a>
         </div>
     </nav>
-  
-    <section id="about-content">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="abpicc.jpg" alt="About Us Image">
+
+    <div class="main-container">
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/Mem1.jpg" alt="Member 1">
+                <p>Angela B. Abad</p>
             </div>
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Welcome to ThriveInMind! We're a group of passionate students dedicated to promoting mental health awareness and support.</p>
-                <p>As students with a shared commitment to mental wellness, we understand the importance of breaking down the stigma surrounding mental health. Through our website, we aim to provide valuable resources, share stories or articles, and foster a supportive community where everyone feels understood and encouraged.</p>
-                <p>Join us on our journey to create a more compassionate and resilient society. Together, we can make a difference in the lives of those struggling with mental health challenges.</p>
-                <p>Thank you for joining us in this important mission!</p>
-                <p>With warmth and solidarity,</p>
-                <p><strong>ThriveInMind</strong></p>
+            <div class="team-member">
+                <img src="images/Mem2.jpg" alt="Member 2">
+                <p>Rialyn Camposano</p>
+            </div>
+            <div class="team-member">
+                <img src="images/Mem3.jpg" alt="Member 3">
+                <p>Yezsha T. Narvaez</p>
+            </div>
+            <div class="team-member">
+                <img src="images/Mem4.jpg" alt="Member 4">
+                <p>Princess Diane B. Rosana</p>
             </div>
         </div>
-    </section>        
+
+        <section id="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to ThriveInMind! We're a group of passionate students dedicated to promoting mental health awareness and support.
+                <br><br>As students with a shared commitment to mental wellness, we understand the importance of breaking down the stigma 
+                surrounding mental health. Through our website, we aim to provide valuable resources, share stories or articles, and foster 
+                a supportive community where everyone feels understood and encouraged.<br><br>Join us on our journey to create a more 
+                compassionate and resilient society. Together, we can make a difference in the lives of those struggling with mental
+                 health challenges.<br><br>Thank you for joining us in this important mission!<br><br>With warmth and solidarity,
+                 <br>ThriveInMind</p>
+        </section>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -69,9 +128,23 @@
         </div>
         
         <div class="copyright">
-            <p>&copy; 2024 Thrive In Mind. All rights reserved.</p>
+            <p>&copy; 2024 ThriveInMind. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleDropdown(dropdownID) {
+            var dropdown = document.getElementById(dropdownID);
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+
+        function showContent(topic) {
+            var sections = ["home", "about", "introduction", "blogs", "types", "cope", "misconceptions"];
+            sections.forEach(function(section) {
+                document.getElementById(section).style.display = (section === topic) ? "block" : "none";
+            });
+        }
+    </script>
 </body>
 
 </html>
