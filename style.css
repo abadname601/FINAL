@@ -235,7 +235,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
-h2, {
+h2 {
     color: #333;
     font-size: 40px;
     margin-bottom: 20px; /* Add margin bottom to separate headings from content */
