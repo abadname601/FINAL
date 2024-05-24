@@ -511,3 +511,12 @@ a:hover {
     border-color: #d63384;
     outline: none;
 }
+
+#misconceptions-content, #blogs-content {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+
+    max-width: 1000px;
+}
