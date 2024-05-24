@@ -8,45 +8,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-     <nav>
-        <div class="logo-container">
-            <img class="logo" src="images/logo.png" alt="ThriveInMind">
-            <h1>ThriveInMind</h1>
-        </div> 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <a href="#">Contents <i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="introduction.html">Introduction</a>
-                    <a href="mental_disorders.html">Types of Mental Disorders</a>
-                    <a href="cope.html">How To Cope Up/Hotlines</a>
-                    <a href="misconceptions.html">Misconceptions about Mental Health</a>
-                    <a href="articles.html">Related Articles</a>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="images/logo.png" alt="ThriveInMind">
+                <h1>ThriveInMind</h1>
+            </div> 
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Contents <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="introduction.html">Introduction</a>
+                        <a href="mental_disorders.html">Types of Mental Disorders</a>
+                        <a href="cope.html">How To Cope Up/Hotlines</a>
+                        <a href="misconceptions.html">Misconceptions about Mental Health</a>
+                        <a href="articles.html">Related Articles</a>
+                    </div>
                 </div>
+                <a href="about_us.html">About Us</a>
             </div>
-            <a href="about_us.html">About Us</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="images/1.png" style="width:100% ">
+            <img src="images/1.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="images/2.png" style="width:100% ">
+            <img src="images/2.png" style="width:100%">
         </div>
-
-
-
+    </div>
     <section id="welcome">
         <div class="content">
-       <h2>Welcome to ThriveInMind</h2> </a>
+            <h2>Welcome to ThriveInMind</h2>
             <p>"In the midst of chaos, there is also opportunity." - Sun Tzu</p>
             <p>In today's fast-paced world, mental health stands as an essential pillar of our overall well-being. Acknowledging this fundamental truth, ThriveInMind emerges as a beacon of hope and support, dedicated to championing mental health awareness and fostering a compassionate community. Our mission is not merely to exist as a digital platform but to serve as a catalyst for positive change, empowering individuals to prioritize their mental well-being and find solace in shared experiences.</p>
             
@@ -54,57 +53,81 @@
             
             <p>Beyond serving as a repository of knowledge, ThriveInMind serves as a safe haven, where individuals find solace in community support. Breaking free from the shackles of stigma and silence, we cultivate an environment of openness and understanding. Here, vulnerability is not a weakness but a strength, fostering connections built on empathy and compassion. Through active engagement and dialogue, we strive to normalize discussions surrounding mental health, erasing the barriers that prevent individuals from seeking help and support.</p>
             <a href="introduction.html" class="get-started-button">Get Started</a>
-            <!-- <p>Our vision extends beyond the confines of cyberspace; it encompasses a collective aspiration to create a world where mental health is prioritized and nurtured. By amplifying voices, sharing experiences, and advocating for change, we endeavor to spark a ripple effect of positivity and acceptance. Together, we challenge societal norms and perceptions, fostering a culture where seeking help is met with encouragement and understanding.</p>
-            <p>As individuals journey through the labyrinth of mental health, ThriveInMind stands as a steadfast companion, offering guidance, companionship, and hope. Through exploration, learning, and shared experiences, we reaffirm a fundamental truth: no one walks this path alone. ThriveInMind is more than just a website; it is a testament to the resilience of the human spirit and the power of community in nurturing mental well-being.</p>
-            <p>In conclusion, ThriveInMind serves as a beacon of hope and support in a world where mental health is often overlooked. With a steadfast commitment to fostering awareness, providing resources, and nurturing community support, we strive to create a world where mental well-being thrives, and every voice is heard and valued. Together, let us embark on this transformative journey, embracing resilience, empathy, and hope as we navigate the complexities of the human mind.</p> -->
         </div>
-    
-        <div>
+     
+        <div class="img">
             <img src="images/hands.jfif" alt="hand extending a help">
+          
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <div class="feedback-form">
+            <h3>Submit Your Feedback</h3>
+            <form action="submit_feedback.php" method="post">
+                <textarea id="message" name="message" rows="4" placeholder="Your comment" required></textarea><br>
+                <div class="name-fields">
+                    <input type="text" id="first_name" name="first_name" placeholder="First name" required>
+                    <input type="text" id="last_name" name="last_name" placeholder="Last name" required>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Your email" required><br>
+                <input type="submit" name="submit" value="SUBMIT YOUR COMMENT">
+            </form>
         </div>
     </section>
 
     <footer>
-        <div>
-            <h3>Contact Us</h3>
-            <p>Email: thriveinmind@gmail.com</p>
-            <p>Phone: 0991-604-0407</p>
-        </div>
+        <div class="footer-content">
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: thriveinmind@gmail.com</p>
+                <p>Phone: 0991-604-0407</p>
+            </div>
 
-        <div>
-            <h3>Follow Us</h3>
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">Instagram</a>
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
         </div>
-
-        <div>
+        <div class="footer-bottom">
             <p>&copy; 2024 Thrive In Mind. All rights reserved.</p>
         </div>
     </footer>
 
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+        }
+    </script>
+
 <script>
-    var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2500); // Change image every 2 seconds
-}
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('feedback')) {
+            const feedbackStatus = urlParams.get('feedback');
+            if (feedbackStatus === 'success') {
+                alert('Feedback submitted successfully!');
+            } else if (feedbackStatus === 'error') {
+                alert('There was an error submitting your feedback. Please try again.');
+            }
+        }
+    });
 </script>
-
 </body>
 </html>
