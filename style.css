@@ -87,7 +87,7 @@ footer {
     text-align: center;
 }
 
-/* Slideshow container */
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -95,7 +95,6 @@ footer {
     
 }
 
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
@@ -133,14 +132,14 @@ section#welcome {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Optional: Adjust spacing between elements */
-    padding: 20px; /* Optional: Add padding around the section */
+    gap: 20px; 
+    padding: 20px;
 }
 
 section#welcome .content,
 section#welcome .img {
     flex: 1;
-    min-width: 300px; /* Adjust this as needed to ensure proper layout on smaller screens */
+    min-width: 300px; 
     box-sizing: border-box;
 }
 
@@ -150,7 +149,7 @@ section#welcome .img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Optional: Add padding around the image */
+    padding: 20px; 
 }
 
 section#welcome .img img {
@@ -180,7 +179,7 @@ section#welcome .img img {
     margin-right: auto;
 } 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     #welcome {
         flex-direction: column;
@@ -209,36 +208,36 @@ section#welcome .img img {
 /* Button Styling */
 .get-started-button, .next-button {
     display: inline-block;
-    background-color: #9c7790; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline from text */
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #9c7790; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .get-started-button:hover {
-    background-color: #827b78; /* Slightly darker background on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    background-color: #827b78; 
+    transform: translateY(-2px);
 }
 
-/* Content Styling */
+
 section {
     padding: 20px;
-    margin-bottom: 30px; /* Add margin bottom for spacing between sections */
-    background-color: #f9f9f9; /* Add a light background color to content sections */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    margin-bottom: 30px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 h2 {
     color: #333;
     font-size: 40px;
-    margin-bottom: 20px; /* Add margin bottom to separate headings from content */
+    margin-bottom: 20px;
 }
 h3.intro{
     color: #333;
@@ -248,48 +247,47 @@ h3.intro{
 h3 {
     color: #f4f4f4;
     font-size: 20px;
-    margin-bottom: 15px; /* Add margin bottom to separate headings from content */
+    margin-bottom: 15px;
 }
 
 p {
-    margin-bottom: 15px; /* Add margin bottom for spacing between paragraphs */
-    line-height: 1.8; /* Improve line spacing for better readability */
+    margin-bottom: 15px;
+    line-height: 1.8; 
 }
 
 ul, ol {
-    margin-bottom: 15px; /* Add margin bottom for spacing between lists and content */
+    margin-bottom: 15px; 
 }
 
 ul li, ol li {
-    margin-bottom: 5px; /* Add margin bottom for spacing between list items */
+    margin-bottom: 5px; 
 }
 
 a {
-    color: #e549b4; /* Change link color to match the theme */
-    transition: color 0.3s ease; /* Smooth transition for link color change */
+    color: #e549b4; 
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #383230; /* Change link color on hover for better visibility */
-}
+    color: #383230; 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     section {
-        padding: 15px; /* Decrease padding for smaller screens */
+        padding: 15px; 
     }
 
     h2 {
-        font-size: 20px; /* Decrease font size for smaller screens */
+        font-size: 20px;
     }
 
     h3 {
-        font-size: 18px; /* Decrease font size for smaller screens */
+        font-size: 18px; 
     }
 }
 
 
-.article-box {   /*articles*/
+.article-box {   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
@@ -436,18 +434,18 @@ a:hover {
     margin: 20px auto;
     padding: 20px;
     border-radius: 20px;
-    /* box-shadow: 0 0 10px rgb(145, 129, 144); */
+  
     max-width: 1000px;
 }
 
 .feedback-form {
     width: 100%;
     max-width: 600px;
-    margin: 20px;  /* Adjust as needed for spacing */
+    margin: 20px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+
 }
 
 .feedback-form h3 {
